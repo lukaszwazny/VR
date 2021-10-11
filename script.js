@@ -6,7 +6,7 @@ while(true){
     boxRot.y += 1
     boxRot.z += 1
     document.querySelector("a-box").setAttribute('rotation', boxRot)
-    await sleep(500)
+    await sleep(100)
 }
 
 
