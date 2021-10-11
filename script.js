@@ -65,4 +65,40 @@ window.onload = async function () {
         
     }, 25)
 
+    //3d mesh
+    AFRAME.registerComponent('torus', {
+        schema: {
+          radius: {type: 'number', default: 10},
+          tube: {type: 'number', default: 3},
+          tubularSegments: {type: 'number', default: 100},
+          radialSegments: {type: 'number', default: 16},
+          color: {type: 'color', default: '#ffff00'}
+        },
+      
+        /**
+         * Initial creation and setting of the mesh.
+         */
+        init: function () {
+          var data = this.data;
+          var el = this.el;
+      
+          // Create geometry.
+          this.geometry = new THREE.TorusKnotGeometry( data.radius, data.tube, data.tubularSegments, data.radialSegments );
+      
+          // Create material.
+          this.material = new THREE.MeshToonMaterial({color: data.color});
+      
+          // Create mesh.
+          this.mesh = new THREE.Mesh(this.geometry, this.material);
+      
+          // Set mesh on entity.
+          el.setObject3D('mesh', this.mesh);
+        },
+
+        tick: function (time, timeDelta) {
+            // Do something on every scene tick or frame.
+            this.el.object3D.rotation.x += THREE.Math.degToRad(1 * timeDelta);
+          }
+      });
+
 }
