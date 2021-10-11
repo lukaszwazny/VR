@@ -97,7 +97,7 @@ window.onload = async function () {
 
         tick: function (time, timeDelta) {
             // Do something on every scene tick or frame.
-            this.el.object3D.rotation.x += THREE.Math.degToRad(1 * timeDelta);
+            this.el.object3D.rotation.x += THREE.Math.degToRad(0.1 * timeDelta);
           }
       });
 
