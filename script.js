@@ -1,6 +1,6 @@
 
 
-window.onload = function () {
+window.onload = async function () {
 
     let box = document.querySelector("a-box")
     let boxRot = box.getAttribute('rotation')
