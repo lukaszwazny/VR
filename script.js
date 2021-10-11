@@ -48,4 +48,21 @@ window.onload = async function () {
         }
     }, 50)
 
+    //animacja kamery
+    let camera = document.querySelector("a-entity")
+    let cameraPos = camera.getAttribute('position')
+    let cameraRot = camera.getAttribute('rotation')
+
+    let x = 0.0
+    let z = 0.0
+    let r = 10.0
+    let a = 0.0
+    setInterval( ()=>{
+        a += 0.02
+        cameraPos.x = x + r * Math.cos(a)
+        cameraPos.z = z + r * Math.sin(a)
+        document.querySelector("a-entity").setAttribute('position', cameraPos)
+        
+    }, 25)
+
 }
