@@ -12,8 +12,8 @@ newmtl st_wood
 	Kd 0.9137 0.8157 0.6471
 	Ks 0.6300 0.6300 0.6300
 	Ke 0.0000 0.0000 0.0000
-	map_Ka D:\New folder 2\wooddark.jpg
-	map_Kd D:\New folder 2\wooddark.jpg
+	map_Ka wooddark.jpg
+	map_Kd wooddark.jpg
 
 newmtl fabric
 	Ns 10.0000
@@ -26,8 +26,8 @@ newmtl fabric
 	Kd 0.8941 0.7843 0.8784
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka D:\New folder 2\877139.jpg
-	map_Kd D:\New folder 2\877139.jpg
+	map_Ka 877139.jpg
+	map_Kd 877139.jpg
 
 newmtl st_textile
 	Ns 10.0000
@@ -40,5 +40,5 @@ newmtl st_textile
 	Kd 0.9843 0.9765 0.9529
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka D:\New folder 2\textile\lightcho.JPG
-	map_Kd D:\New folder 2\textile\lightcho.JPG
+	map_Ka lightcho.JPG
+	map_Kd lightcho.JPG
