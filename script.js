@@ -51,7 +51,6 @@ window.onload = async function () {
     //animacja kamery
     let camera = document.querySelector("#camera")
     let cameraPos = camera.getAttribute('position')
-    let cameraRot = camera.getAttribute('rotation')
 
     let x = 0.0
     let z = 0.0
